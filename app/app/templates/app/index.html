@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "home.css" %}>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Naz Rolex</title>
+</head>
+<body>
+    <div class="container">
+        <video src={% static "Images/Lion.mp4"%} autoplay muted loop>
+            <track src={% static "Images/subtitles.vtt" %} kind="subtitles" srclang="en" label="English">
+        </video>
+        <header>
+            <nav>
+                <div class="logo-menu">
+
+                    <img src={% static "Images/Crown.png" %} class="logo" alt="">
+                    <div class="menu">
+                        <i id="menu-icon" class='bx bx-menu'></i>
+                        <a href="#">Menu</a>
+                    </div>
+                </div>
+                <ul>
+                    <div class="search">
+                        <i class='bx bx-search' ></i>
+                        <a href="#">Search</a>
+                    </div>
+                    <div class="store">
+                        <i class='bx bx-current-location' ></i>
+                        <a href="">Store Location</a>
+                    </div>
+                    <div class="favs">
+                        <i class='bx bx-heart' ></i>
+                        <a href="#">Favorites</a>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <section class="info">
+            <p>King</p>
+            <h1>Lorem ip!</h1>
+            <button>Lorem, ipsum dolor.</button>
+        </section>
+    </div>
+</body>
+</html>
