@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nazir's Lion project">
     <link rel="stylesheet" href={% static "home.css" %}>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Naz Rolex</title>
+    <title>Lion's Vision</title>
 </head>
+
 <body>
     <div class="container">
-        <video src={% static "Images/Lion.mp4"%} autoplay muted loop>
+        <!-- Background Video -->
+        <video src={% static "Images/Lion.mp4" %} autoplay muted loop>
             <track src={% static "Images/subtitles.vtt" %} kind="subtitles" srclang="en" label="English">
         </video>
         <header>
             <nav>
                 <div class="logo-menu">
-
                     <img src={% static "Images/Crown.png" %} class="logo" alt="">
                     <div class="menu">
                         <i id="menu-icon" class='bx bx-menu'></i>
@@ -25,25 +28,97 @@
                 </div>
                 <ul>
                     <div class="search">
-                        <i class='bx bx-search' ></i>
+                        <i class='bx bx-search'></i>
                         <a href="#">Search</a>
                     </div>
                     <div class="store">
-                        <i class='bx bx-current-location' ></i>
+                        <i class='bx bx-current-location'></i>
                         <a href="">Store Location</a>
                     </div>
                     <div class="favs">
-                        <i class='bx bx-heart' ></i>
+                        <i class='bx bx-heart'></i>
                         <a href="#">Favorites</a>
                     </div>
                 </ul>
             </nav>
         </header>
         <section class="info">
-            <p>King</p>
-            <h1>Lorem ip!</h1>
-            <button>Lorem, ipsum dolor.</button>
+            <p>Navigating life</p>
+            <h1>Lion's Vision</h1>
+            <button>Explore Naz</button>
         </section>
     </div>
+    <main>
+        <section class="section-1">
+            <div class="wrapper">
+                <div class="container2">
+                    <!-- Row 1 -->
+                    <input type="radio" name="slide" id="c1" checked>
+                    <label for="c1" class="card">
+                        <div class="row">
+                            <div class="icon">1</div>
+                            <div class="description"></div>
+                            <h4>Pink</h4>
+                        </div>
+                    </label>
+                    <!-- Row 2 -->
+                    <input type="radio" name="slide" id="c2" checked>
+                    <label for="c2" class="card">
+                        <div class="row">
+                            <div class="icon">2</div>
+                            <div class="description"></div>
+                            <h4>Colorful</h4>
+                        </div>
+                    </label>
+                    <!-- Row 3 -->
+                    <input type="radio" name="slide" id="c3" checked>
+                    <label for="c3" class="card">
+                        <div class="row">
+                            <div class="icon">3</div>
+                            <div class="description"></div>
+                            <h4>Light Pink</h4>
+                        </div>
+                    </label>
+                    <!-- Row 4 -->
+                    <input type="radio" name="slide" id="c4" checked>
+                    <label for="c4" class="card">
+                        <div class="row">
+                            <div class="icon">4</div>
+                            <div class="description"></div>
+                            <h4>Blue</h4>
+                        </div>
+                    </label>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">© Nazir Knuckles Batking74 | All Rights Reserved</p>
+    </footer>
 </body>
+
 </html>
