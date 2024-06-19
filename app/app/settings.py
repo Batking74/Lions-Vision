@@ -4,11 +4,13 @@ from os import getenv
 
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 
-TEMPLATES_DIR = BASE_DIR.joinpath('app/templates')
+print(BASE_DIR)
 
-STATIC_DIR = BASE_DIR.joinpath('app/static')
+TEMPLATES_DIR = BASE_DIR.joinpath('templates')
+
+STATIC_DIR = BASE_DIR.joinpath('static')
 
 
 # Quick-start development settings - unsuitable for production
@@ -70,7 +72,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR.parent / 'db.sqlite3',
     }
 }
 

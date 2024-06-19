@@ -12,10 +12,15 @@
     height: 100vh;
 }
 
+header {
+    /* Other color: 00cc7a9e */
+    background-color: #6055009e;
+    backdrop-filter: blur(20px);
+}
+
 .logo {
     width: 50px;
     height: 50px;
-    padding: 8px;
     cursor: pointer;
     transition: 0.4s ease;
 }
@@ -24,19 +29,13 @@
     transform: scale(1.1);
 }
 
-header {
-    /* Other color: 00cc7a9e */
-    background-color: #6055009e;
-    backdrop-filter: blur(20px);
-}
-
 .logo-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav .logo-menu .menu {
+nav .logo-menu .menu-container {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -46,13 +45,13 @@ nav .logo-menu .menu {
     cursor: pointer;
 }
 
-.menu a {
+.menu-container a {
     color: #fff;
     font-size: 18px;
     transition: 0.3s ease;
 }
 
-.menu a:hover {
+.menu-container a:hover {
     color: #00cc7a9e;
 }
 
@@ -82,8 +81,8 @@ nav .logo-menu .menu {
     color: #00cc7a9e;
 }
 
-.store,
-.store a {
+.timeline,
+.timeline a {
     color: white;
     font-size: 18px;
     display: flex;
@@ -92,8 +91,8 @@ nav .logo-menu .menu {
     transition: 0.3s ease;
 }
 
-.store:hover,
-.store a:hover {
+.timeline:hover,
+.timeline a:hover {
     color: #00cc7a9e;
 }
 
@@ -127,6 +126,81 @@ nav ul {
     gap: 5em;
 }
 
+/* Side Menu */
+.main-box {
+    position: absolute;
+    height: 100vh;
+    background: linear-gradient(45deg, #00000099, #00000099);
+    background-size: cover;
+    background-position: center;
+}
+
+.sidebar {
+    position: fixed;
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 280px;
+    left: -290px;
+    background: #00000049;
+    border-right: 2px solid #fff;
+    transition: 0.4s;
+    z-index: 20;
+}
+
+.logo2 a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 1rem 1rem 1rem 3rem;
+    border-bottom: 2px solid #fff;
+}
+
+.menu2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu2 ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 1rem 1rem 1rem 3rem;
+    border-bottom: 1px dashed #ffffff56;
+}
+
+.social2 {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    width: 100%;
+    border-top: 2px solid #fff;
+}
+
+.social2 a {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.btn-close i {
+    position: absolute;
+    top: 3%;
+    right: 20px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#menu-icon:checked ~ .sidebar {
+    left: 0;
+    transition: 0.9s;
+}
+
 /* Body Styles */
 .info {
     display: flex;
@@ -142,7 +216,7 @@ nav ul {
 }
 
 .info p {
-    font-size: 38px;
+    font-size: 20px;
     color: white;
 }
 
@@ -172,6 +246,7 @@ video {
 .info button:hover {
     transform: translateY(-5px);
     opacity: 1;
+    cursor: pointer;
 }
 
 
@@ -182,7 +257,7 @@ main {
 
 /* Section 1 */
 .section-1 {
-    background-image: url('./Images/Section1_Background.jpg');
+    background-image: url('./Images/Section1_Background.webp');
     background-size: cover;
     min-height: 100vh;
     backdrop-filter: blur(10px);
@@ -222,6 +297,10 @@ main {
     flex-wrap: nowrap;
 }
 
+.row h4 {
+    width: fit-content;
+}
+
 .card>.row>.icon {
     background: #fff;
     color: #000;
@@ -237,9 +316,7 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    overflow: hidden;
     height: 80px;
-    width: 520px;
     opacity: 0;
     transform: translateY(30px);
     transition-delay: .3s;
@@ -264,19 +341,19 @@ input:checked+label .description {
 }
 
 .card[for="c1"] {
-    background-image: url('./Images/Lion1.jpg');
+    background-image: url('./Images/Lion1.webp');
 }
 
 .card[for="c2"] {
-    background-image: url('./Images/Lion2.jpg');
+    background-image: url('./Images/Lion2.webp');
 }
 
 .card[for="c3"] {
-    background-image: url('./Images/Lion3.jpg');
+    background-image: url('./Images/Lion3.webp');
 }
 
 .card[for="c4"] {
-    background-image: url('./Images/Lion4.jpg');
+    background-image: url('./Images/Lion4.webp');
 }
 
 /* Footer */
@@ -345,97 +422,7 @@ footer ul li {
     color: rgb(98, 98, 98);
 }
 
+/* Responsive Web Design */
 @media screen and (max-width: 1000px) {
-    /* Section 1 */
-    .wrapper {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .container2 {
-        height: 400px;
-        width: 700px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-
-    .card {
-        width: 80px;
-        border-radius: 2rem;
-        background-size: cover;
-        cursor: pointer;
-        overflow: hidden;
-        margin: 0 10px;
-        display: flex;
-        align-items: flex-end;
-        transition: .6s cubic-bezier(.91, -0.10, 0, .99);
-        box-shadow: 5px 10px 15px -5px #000;
-    }
-
-    .card>.row {
-        color: white;
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
-    .card>.row>.icon {
-        background: #fff;
-        color: #000;
-        border-radius: 50%;
-        width: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 15px;
-    }
-
-    .card>.row>.description {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        overflow: hidden;
-        height: 80px;
-        width: 520px;
-        opacity: 0;
-        transform: translateY(30px);
-        transition-delay: .3s;
-    }
-
-    .description p {
-        color: black;
-        padding-top: 5px;
-    }
-
-    input {
-        display: none;
-    }
-
-    input:checked+label {
-        width: 600px;
-    }
-
-    input:checked+label .description {
-        opacity: 1 !important;
-        transform: translateY(0) !important;
-    }
-
-    .card[for="c1"] {
-        background-image: url('./Images/Crown.png');
-    }
-
-    .card[for="c2"] {
-        background-image: url('./Images/Crown.png');
-    }
-
-    .card[for="c3"] {
-        background-image: url('./Images/Crown.png');
-    }
-
-    .card[for="c4"] {
-        background-image: url('./Images/Crown.png');
-    }
+   
 }

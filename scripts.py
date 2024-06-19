@@ -5,7 +5,7 @@ def build():
     subprocess.run(['pip', 'freeze', '>', 'requirements.txt'])
     # Run Build Command
     subprocess.run(['pip', 'install', '-r', 'requirements.txt'])
-    
+
 def run_dev_server():
     subprocess.run(['python', 'manage.py', 'runserver', '5000'], cwd='app')
 
