@@ -140,7 +140,7 @@ nav ul {
     backdrop-filter: blur(10px);
     height: 100vh;
     width: 280px;
-    left: -290px;
+    /* left: -290px; */
     background: #00000049;
     border-right: 2px solid #fff;
     transition: 0.4s;
@@ -175,7 +175,7 @@ nav ul {
 .social2 {
     position: absolute;
     bottom: 0;
-    padding: 1rem;
+    padding: 20px 0 20px 10px;
     width: 100%;
     border-top: 2px solid #fff;
 }

@@ -1,0 +1,16 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+// Importing Sass Modules
+@import './NavigationComponent.sass';
+@import './HomePage.sass';
+@import './TimelinePage.sass';
+@import './FooterComponent.sass';
+@import './QuotesPage.sass';

@@ -1,0 +1,154 @@
+/* Navigation Styles */
+.container
+    height: 100vh
+
+.home-header
+    /* Other color: 00cc7a9e */
+    background-color: #6055009e
+    backdrop-filter: blur(20px)
+
+.logo
+    width: 50px
+    height: 50px
+    cursor: pointer
+    transition: 0.4s ease
+    &:hover
+        transform: scale(1.1)
+
+.logo-menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .menu-container
+        display: flex
+        align-items: center
+        justify-content: left
+        gap: 1em
+        margin-left: -10em
+        color: #fff
+        cursor: pointer
+        a
+            color: #fff
+            font-size: 18px
+            transition: 0.3s ease
+            &:hover
+                color: #e6c802de
+
+#menu-icon
+    color: white
+    font-size: 24px
+    margin-left: -90%
+    transition: 0.3s ease
+    &:hover
+        color: #e6c802de
+    &:checked ~ .sidebar
+        left: 0
+        transition: 0.9s
+
+.search, .search a
+    color: white
+    font-size: 18px
+    display: flex
+    align-items: center
+    gap: 0.5em
+    transition: 0.3s ease
+
+.search:hover, .search a:hover
+    color: #e6c802de
+
+.timeline, .timeline a
+    color: white
+    font-size: 18px
+    display: flex
+    align-items: center
+    gap: 0.5em
+    transition: 0.3s ease
+
+.timeline:hover, .timeline a:hover
+    color: #e6c802de
+
+.favs, .favs a
+    color: white
+    font-size: 18px
+    display: flex
+    align-items: center
+    gap: 0.5em
+    transition: 0.3s ease
+
+.favs:hover, .favs a:hover
+    color: #e6c802de
+
+nav
+    padding: 2em 20em
+    display: flex
+    gap: 5em
+    align-items: center
+    justify-content: space-between
+    ul
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        gap: 5em
+
+/* Side Menu */
+.main-box
+    position: absolute
+    height: 100vh
+    background: linear-gradient(45deg, #00000099, #00000099)
+    background-size: cover
+    background-position: center
+
+.sidebar
+    position: fixed
+    backdrop-filter: blur(10px)
+    height: 100vh
+    width: 280px
+    left: -290px
+    background: #00000049
+    border-right: 2px solid #fff
+    transition: 0.4s
+    z-index: 20
+
+.open
+    left: 0
+
+.logo2 a
+    color: #fff
+    display: block
+    text-decoration: none
+    font-size: 25px
+    font-weight: 500
+    padding: 1rem 1rem 1rem 3rem
+    border-bottom: 2px solid #fff
+
+.menu2 ul
+    list-style: none
+    padding: 0
+    li a
+        display: block
+        text-decoration: none
+        color: #fff
+        font-size: 18px
+        font-weight: 500
+        padding: 1rem 1rem 1rem 3rem
+        border-bottom: 1px dashed #ffffff56
+
+.social2
+    position: absolute
+    bottom: 0
+    padding: 20px 0 20px 10px
+    width: 100%
+    border-top: 2px solid #fff
+    a
+        color: #fff
+        font-size: 25px
+        text-decoration: none
+        padding: 0 1rem
+
+.btn-close i
+    position: absolute
+    top: 3%
+    right: 20px
+    color: #fff
+    font-size: 25px
+    cursor: pointer

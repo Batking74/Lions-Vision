@@ -1,0 +1,127 @@
+/* Body Styles */
+.info
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    margin-top: 9em
+    h1
+        font-size: 87px
+        color: white
+    p
+        font-size: 20px
+        color: white
+    button
+        padding: 10px 30px
+        border-radius: 10px
+        color: white
+        font-size: 24px
+        border: none
+        background-color: #6055009e
+        border: 2px solid #6055009e
+        transition: 0.3s ease
+        opacity: 0.8
+        margin-top: 1em
+        &:hover
+            transform: translateY(-5px)
+            opacity: 1
+            cursor: pointer
+
+video
+    position: absolute
+    height: 100%
+    width: 100%
+    top: 0
+    left: 0
+    object-fit: cover
+    z-index: -5
+
+/* Main Section */
+main
+    margin-top: auto
+
+/* Section 1 */
+.section-1
+    background-image: url('./Images/Section1_Background.webp')
+    background-size: cover
+    min-height: 100vh
+    backdrop-filter: blur(10px)
+
+.wrapper
+    width: 100%
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+
+.container2
+    height: 400px
+    display: flex
+    flex-wrap: nowrap
+    justify-content: center
+
+.card
+    width: 80px
+    border-radius: 2rem
+    background-size: cover
+    cursor: pointer
+    overflow: hidden
+    margin: 0 10px
+    display: flex
+    align-items: flex-end
+    transition: .6s cubic-bezier(.91, -0.10, 0, .99)
+    box-shadow: 5px 10px 15px -5px #000
+
+.card > .row
+    color: white
+    display: flex
+    flex-wrap: nowrap
+
+.row p
+    width: fit-content
+    font-size: 17.5px
+    font-weight: 700
+
+.card > .row > .icon
+    background: #fff
+    color: #000
+    border-radius: 50%
+    width: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 15px
+
+.card > .row > .description
+    display: flex
+    justify-content: center
+    flex-direction: column
+    height: 80px
+    opacity: 0
+    transform: translateY(30px)
+    transition-delay: .3s
+
+.description p
+    color: black
+    padding-top: 5px
+
+input
+    display: none
+    &:checked+label
+        width: 600px
+
+input:checked+label .description
+    opacity: 1 !important
+    transform: translateY(0) !important
+
+.card[for="c1"]
+    background-image: url('./Images/Lion1.webp')
+
+.card[for="c2"]
+    background-image: url('./Images/Lion2.webp')
+
+.card[for="c3"]
+    background-image: url('./Images/Lion3.webp')
+
+.card[for="c4"]
+    background-image: url('./Images/Lion4.webp')

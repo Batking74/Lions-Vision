@@ -1,0 +1,131 @@
+.main-quotepage
+    display: flex
+    justify-content: center
+    align-content: center
+    min-height: 100vh
+    background: linear-gradient(#f4c803, #f3f711)
+
+.quote
+    width: 1200px
+    height: 100%
+    display: flex
+    justify-content: space-between
+    align-content: center
+    flex-wrap: wrap
+    row-gap: 50px
+    padding: 50px 0 50px 0
+    z-index: 2
+    .box
+        display: flex
+        flex-direction: column
+        gap: 20px
+        position: relative
+        width: 360px
+        height: 350px
+        background: #fff
+        border-radius: 30px
+        overflow: hidden
+        transition: 0.5s
+        z-index: 2
+        box-sizing: border-box
+        padding: 30px
+        box-shadow: -10px 25px 50px rgba(0, 0, 0, .2)
+        p
+            font-family: 'Times New Roman', Times, serif
+            font-size: 20px
+            &:hover
+                cursor: default
+        i
+            display: flex
+            justify-content: center
+            width: 100%
+        h2
+            font-family: 'Times New Roman', Times, serif
+            position: absolute
+            bottom: 30px
+            right: 30px
+            margin: 0
+            padding: 0
+            font-size: 30px
+            text-transform: uppercase
+            &:hover
+                cursor: default
+        &:hover p
+            color: #fff
+        &.box11:hover h2,
+        &.box5:hover h2,
+        &.box7:hover h2,
+        &.box8:hover h2,
+        &.box9:hover h2,
+        &.box10:hover h2,
+        &.box11:hover h2,
+            color: #b1ab00
+        &.box1:hover, &.box1:hover ~ .quote-bg
+            opacity: 1
+            background: linear-gradient(#d94220, #e49b09)
+        &.box2:hover, &.box2:hover ~ .quote-bg
+            opacity: 1
+            background: linear-gradient(#ff0000, #ffee00)
+        &.box3:hover, &.box3:hover ~ .quote-bg
+            opacity: 1
+            background: linear-gradient(#ff0000, #ffee00)
+        &.box4:hover , &.box4:hover ~ .quote-bg
+            opacity: 1
+            background: linear-gradient(#ff0000, #ffee00)
+        &.box5:hover , &.box5:hover ~ .quote-bg
+            opacity: 1
+            background: linear-gradient(#ff0000, #000)
+        &.box6:hover , &.box6:hover ~ .quote-bg
+            opacity: 1
+            background: linear-gradient(#03A9F4, #E91E63)
+        &.box7:hover , &.box7:hover ~ .quote-bg
+            opacity: 1
+            background: linear-gradient(#ff0000, #000)
+        &.box8:hover , &.box8:hover ~ .quote-bg
+            opacity: 1
+            background: linear-gradient(#ff0000, #000)
+        &.box9:hover , &.box9:hover ~ .quote-bg
+            opacity: 1
+            background: linear-gradient(#ff0000, #000)
+        &.box10:hover , &.box10:hover ~ .quote-bg
+            opacity: 1
+            background: linear-gradient(#ff0000, #000)
+        &.box11:hover , &.box11:hover ~ .quote-bg
+            opacity: 1
+            background: linear-gradient(#ff0000, #000)
+        &:hover
+            box-shadow: -20px 50px 100px rgba(0, 0, 0, .5)
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: -50%
+            width: 100%
+            height: 100%
+            background: rgba(255, 255, 255, .2)
+            pointer-events: none
+        &::after
+            content: url('./Images/quote-right-solid.png')
+            position: absolute
+            bottom: 55%
+            right: 40%
+            width: 10px
+            height: 10px
+            opacity: .1
+            background: rgba(255, 255, 255, .2)
+            pointer-events: none
+            filter: invert(1)
+        &:hover::after
+            filter: invert(0)
+        
+    .quote-bg
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        opacity: 0
+        transition: 0.5s
+        pointer-events: none
+        width: 100% 
+        height: 100% 
