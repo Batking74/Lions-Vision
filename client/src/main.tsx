@@ -2,7 +2,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ResourcesPage } from './Pages/ResourcesPage.tsx';
 import { TimelinePage } from './Pages/TimelinePage.tsx';
-import { ServicesPage } from './Pages/ServicesPage.tsx';
 import { FeedbackPage } from './Pages/FeedbackPage.tsx';
 import { AboutMePage } from './Pages/AboutMePage.tsx';
 import { ContactPage } from './Pages/ContactPage.tsx';
@@ -43,10 +42,6 @@ const router = createBrowserRouter([{
     {
       path: '/Contact',
       element: <ContactPage />
-    },
-    {
-      path: '/Services',
-      element: <ServicesPage />
     },
     {
       path: '/Resources',

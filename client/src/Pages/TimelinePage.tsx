@@ -13,8 +13,8 @@ export const TimelinePage = () => {
             {/* Main Content Markup */}
             <main className="timeline-section">
                 {/* Background Video */}
-                <video className="timeline-video" src="Images/Lion_Timeline.mp4" autoPlay muted loop>
-                    <track src="Images/subtitles.vtt" kind="subtitles" srcLang="en" label="English" />
+                <video className="timeline-video" src="/assets/Images/Lion_Timeline.mp4" autoPlay muted loop>
+                    <track src="/assets/Images/subtitles.vtt" kind="subtitles" srcLang="en" label="English" />
                 </video>
                 <div className="timeline-items">
                     {/* Period 1 */}

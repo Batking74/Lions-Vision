@@ -10,8 +10,8 @@ export const HomePage = () => {
             <SideMenuComponent />
             <div className="container">
                 {/* Background Video */}
-                <video src="Images/Lion.mp4" autoPlay muted loop>
-                    <track src="Images/subtitles.vtt" kind="subtitles" srcLang="en" label="English" />
+                <video src="/assets/Images/Lion.mp4" autoPlay muted loop>
+                    <track src="/assets/Images/subtitles.vtt" kind="subtitles" srcLang="en" label="English" />
                 </video>
                 <header className="home-header">
                     <NavigationComponent />

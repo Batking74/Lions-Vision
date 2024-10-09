@@ -9,7 +9,7 @@ export const NavigationComponent = () => {
         // Navigation Bar Markup Component
         <nav>
             <div className="logo-menu">
-                <img src="/Images/Crown.webp" className="logo" alt="Nazir's Logo" />
+                <img src="/assets/Images/Crown.webp" className="logo" alt="Nazir's Logo" />
                 <div className="menu-container">
                     <i id="menu-icon" className='bx bx-menu' onClick={openSideNavBar}></i>
                     <Link to="#" aria-label="Open Side Menu" onClick={openSideNavBar}>Menu</Link>
@@ -54,25 +54,13 @@ export const SideMenuComponent = () => {
                             <Link to="/" aria-label="Navigate to Homepage"><i className='bx bxl-windows'></i> Home</Link>
                         </li>
                         <li>
-                            <Link to="/FAQ" aria-label="Label"><i className='bx bx-link'></i> FAQ</Link>
-                        </li>
-                        <li>
-                            <Link to="#" aria-label="Label"><i className='bx bxs-show'></i> Overview</Link>
-                        </li>
-                        <li>
-                            <Link target="_blank" to="https://portfolio-website-71rz.onrender.com" aria-label="Navigate to Nazir's Portfolio Website"><i className='bx bx-calendar-alt'></i> Portfolio Website</Link>
-                        </li>
-                        <li>
-                            <Link to="/AboutMe" aria-label="Navigate to About Nazir Page"><i className='bx bx-question-mark'></i> About Me</Link>
-                        </li>
-                        <li>
-                            <Link to="/Services" aria-label="Label"><i className='bx bxs-briefcase-alt-2'></i> Services</Link>
-                        </li>
-                        <li>
-                            <Link to="/Contact" aria-label="Contact Nazir at the Contact Page"><i className='bx bxs-contact'></i> Contact</Link>
+                            <Link to="/AboutMe" aria-label="Navigate to About Nazir Page"><i className='bx bx-question-mark'></i> My Story</Link>
                         </li>
                         <li>
                             <Link to="/Feedback" aria-label="Label"><i className='bx bxs-envelope'></i> Feedback</Link>
+                        </li>
+                        <li>
+                            <Link target="_blank" to="https://portfolio-website-71rz.onrender.com" aria-label="Navigate to Nazir's Portfolio Website"><i className='bx bx-calendar-alt'></i> Portfolio Website</Link>
                         </li>
                     </ul>
                 </div>

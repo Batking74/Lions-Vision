@@ -1,1 +1,16 @@
-{}
+{
+    "name": "lions-vision",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "devDependencies": {
+        "concurrently": "^9.0.1"
+    },
+    "scripts": {
+        "dev": "concurrently \"cd client && npm run dev\" \"python manage.py runserver\"",
+        "build": "cd client && npm run build && cd .. && pip freeze > requirements.txt && pip install -r requirements.txt && python manage.py collectstatic --noinput"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
