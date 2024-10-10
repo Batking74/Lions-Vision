@@ -16,7 +16,7 @@ export const FooterComponent = () => {
                 <a target="_blank" href="https://www.linkedin.com/in/nazir-knuckles-736970234" aria-label="Navigate to Nazir's LinkedIn Profile">
                     <i className='bx bxl-linkedin-square'></i>
                 </a>
-                <a target="_blank" href="https://portfolio-website-71rz.onrender.com" aria-label="Navigate to Nazir's Portfolio Website">
+                <a target="_blank" href="https://nazirsportfolio.com" aria-label="Navigate to Nazir's Portfolio Website">
                     <i className='bx bx-code-block'></i>
                 </a>
                 <a target="_blank" href="https://www.youtube.com/channel/UCZ0xj4NiBVNSTVIu2B7ufqg" aria-label="Navigate to Nazir's YouTube channel">
@@ -24,8 +24,8 @@ export const FooterComponent = () => {
                 </a>
             </div>
             <ul className="list">
-                <li><Link to="https://portfolio-website-71rz.onrender.com/FAQ" aria-label="Navigate to Nazir's FAQ Page">FAQ</Link></li>
-                <li><Link to="https://portfolio-website-71rz.onrender.com/Services" aria-label="Navigate to Nazir's Services Page">Services</Link></li>
+                <li><Link to="https://nazirsportfolio.com/FAQ" aria-label="Navigate to Nazir's FAQ Page">FAQ</Link></li>
+                <li><Link to="https://nazirsportfolio.com/Services" aria-label="Navigate to Nazir's Services Page">Services</Link></li>
                 <li><Link to="/AboutMe" aria-label="Navigate to Nazir's About Page">About Me</Link></li>
                 <li><Link to="/Contact" aria-label="Navigate to Nazir's Contact Page">Contact</Link></li>
                 <li><Link to="#" aria-label="Open up Privacy Policy">Privacy Policy</Link></li>

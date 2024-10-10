@@ -57,10 +57,16 @@ export const SideMenuComponent = () => {
                             <Link to="/AboutMe" aria-label="Navigate to About Nazir Page"><i className='bx bx-question-mark'></i> My Story</Link>
                         </li>
                         <li>
+                            <Link to="/Timeline"><i className='bx bx-timer' ></i>Journey Timeline</Link>
+                        </li>
+                        <li>
+                            <Link to="/FavoriteQuotes"><i className='bx bx-heart'></i>Favorite Quotes</Link>
+                        </li>
+                        <li>
                             <Link to="/Feedback" aria-label="Label"><i className='bx bxs-envelope'></i> Feedback</Link>
                         </li>
                         <li>
-                            <Link target="_blank" to="https://portfolio-website-71rz.onrender.com" aria-label="Navigate to Nazir's Portfolio Website"><i className='bx bx-calendar-alt'></i> Portfolio Website</Link>
+                            <Link target="_blank" to="https://nazirsportfolio.com" aria-label="Navigate to Nazir's Portfolio Website"><i className='bx bx-calendar-alt'></i> Portfolio Website</Link>
                         </li>
                     </ul>
                 </div>

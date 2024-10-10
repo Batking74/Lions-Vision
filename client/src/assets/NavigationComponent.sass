@@ -1,3 +1,6 @@
+@import './Mixins'
+
+$breakpoint: 1000px
 /* Navigation Styles */
 .container
     height: 100vh
@@ -19,6 +22,11 @@
     display: flex
     align-items: center
     justify-content: space-between
+    @include mediaQuery($breakpoint)
+        min-width: 100%
+        padding: 1.5em 0
+        justify-content: space-around
+        column-gap: 50px
     .menu-container
         display: flex
         align-items: center
@@ -27,6 +35,9 @@
         margin-left: -10em
         color: #fff
         cursor: pointer
+        @include mediaQuery($breakpoint)
+            margin: 0
+            justify-content: right
         a
             color: #fff
             font-size: 18px
@@ -84,11 +95,16 @@ nav
     gap: 5em
     align-items: center
     justify-content: space-between
+    @include mediaQuery($breakpoint)
+        padding: 0
     ul
         display: flex
         align-items: center
         justify-content: space-evenly
         gap: 5em
+        @include mediaQuery($breakpoint)
+            display: none
+        
 
 /* Side Menu */
 .main-box
