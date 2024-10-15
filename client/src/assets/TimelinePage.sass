@@ -1,15 +1,35 @@
+@import './Mixins'
+
 .timeline-container
     // background-image: 
     min-height: 100vh
     background-size: cover
 
-.timeline-video
-    position: fixed
-
 .timeline-section
     min-height: 100vh
     padding: 100px 15px
-
+    display: flex
+    justify-content: center
+    .timeline-video
+        position: fixed
+        height: 100%
+        width: 100%
+        top: 0
+        left: 0
+        object-fit: cover
+        z-index: -5
+        @include mediaQuery(1000px)
+            display: none
+    img
+        display: none
+        @include mediaQuery(1000px)
+            display: block
+            position: fixed
+            width: 100%
+            height: 100%
+            top: 0
+            object-fit: cover
+            z-index: -5
 .timeline-items
     max-width: 1000px
     margin: auto
@@ -33,8 +53,13 @@
     &:nth-last-child(odd)
         padding-right: calc(50% + 30px)
         text-align: right
+        @include mediaQuery(767px)
+            padding-right: 0
+            text-align: left
     &:nth-last-child(even)
         padding-left: calc(50% + 30px)
+        @include mediaQuery(767px)
+            padding-left: 0
 
 .timeline-dot
     height: 21px

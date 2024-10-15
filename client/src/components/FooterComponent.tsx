@@ -26,8 +26,8 @@ export const FooterComponent = () => {
             <ul className="list">
                 <li><Link to="https://nazirsportfolio.com/FAQ" aria-label="Navigate to Nazir's FAQ Page">FAQ</Link></li>
                 <li><Link to="https://nazirsportfolio.com/Services" aria-label="Navigate to Nazir's Services Page">Services</Link></li>
-                <li><Link to="/AboutMe" aria-label="Navigate to Nazir's About Page">About Me</Link></li>
-                <li><Link to="/Contact" aria-label="Navigate to Nazir's Contact Page">Contact</Link></li>
+                {/* <li><Link to="/AboutMe" aria-label="Navigate to Nazir's About Page">About Me</Link></li> */}
+                {/* <li><Link to="https://nazirsportfolio.com/Contact" aria-label="Navigate to Nazir's Contact Page">Contact</Link></li> */}
                 <li><Link to="#" aria-label="Open up Privacy Policy">Privacy Policy</Link></li>
             </ul>
             <p className="copyright">© Nazir Knuckles | Batking74 | All Rights Reserved</p>

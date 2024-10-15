@@ -53,20 +53,26 @@ export const SideMenuComponent = () => {
                         <li>
                             <Link to="/" aria-label="Navigate to Homepage"><i className='bx bxl-windows'></i> Home</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/AboutMe" aria-label="Navigate to About Nazir Page"><i className='bx bx-question-mark'></i> My Story</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link to="/Timeline"><i className='bx bx-timer' ></i>Journey Timeline</Link>
                         </li>
                         <li>
                             <Link to="/FavoriteQuotes"><i className='bx bx-heart'></i>Favorite Quotes</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/Feedback" aria-label="Label"><i className='bx bxs-envelope'></i> Feedback</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link target="_blank" to="https://nazirsportfolio.com" aria-label="Navigate to Nazir's Portfolio Website"><i className='bx bx-calendar-alt'></i> Portfolio Website</Link>
+                        </li>
+                        <li>
+                            <Link target="_blank" to="https://yamalonsuniverseportal.com" aria-label="Navigate to Nazir's Yamalons Universe Website"><i className='bx bx-calendar-alt'></i> Yamalon's Universe</Link>
+                        </li>
+                        <li>
+                            <Link target="_blank" to="https://nubian-fortune-marketplace.onrender.com" aria-label="Navigate to Nazir's Nubian Fortune Website"><i className='bx bx-calendar-alt'></i> Nubian Fortune</Link>
                         </li>
                     </ul>
                 </div>

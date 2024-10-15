@@ -9,6 +9,10 @@ $breakpoint: 1000px
     /* Other color: 00cc7a9e */
     background-color: #6055009e
     backdrop-filter: blur(20px)
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 100
 
 .logo
     width: 50px
@@ -104,7 +108,6 @@ nav
         gap: 5em
         @include mediaQuery($breakpoint)
             display: none
-        
 
 /* Side Menu */
 .main-box
@@ -123,7 +126,7 @@ nav
     background: #00000049
     border-right: 2px solid #fff
     transition: 0.4s
-    z-index: 20
+    z-index: 200
 
 .open
     left: 0
@@ -137,17 +140,20 @@ nav
     padding: 1rem 1rem 1rem 3rem
     border-bottom: 2px solid #fff
 
-.menu2 ul
-    list-style: none
-    padding: 0
-    li a
-        display: block
-        text-decoration: none
-        color: #fff
-        font-size: 18px
-        font-weight: 500
-        padding: 1rem 1rem 1rem 3rem
-        border-bottom: 1px dashed #ffffff56
+.menu2
+    ul
+        list-style: none
+        padding: 0
+        li
+            a
+                display: flex
+                column-gap: 10px
+                text-decoration: none
+                color: #fff
+                font-size: 18px
+                font-weight: 500
+                padding: 1rem 1rem 1rem 3rem
+                border-bottom: 1px dashed #ffffff56
 
 .social2
     position: absolute

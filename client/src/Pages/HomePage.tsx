@@ -8,18 +8,20 @@ export const HomePage = () => {
     return (
         <Fragment>
             <SideMenuComponent />
+            <header className="home-header">
+                <NavigationComponent />
+            </header>
             <div className="container">
                 {/* Background Video */}
-                <video src="/assets/Images/Lion.mp4" autoPlay muted loop>
+                <video autoPlay muted loop>
                     <track src="/assets/Images/subtitles.vtt" kind="subtitles" srcLang="en" label="English" />
+                    <source src="/assets/Images/Lion_resized.mp4" type='video/mp4' />
                 </video>
-                <header className="home-header">
-                    <NavigationComponent />
-                </header>
+                <img src="/assets/Images/crossroad-car-safari-scene 1.webp" alt="Lion" />
                 <section className="info">
                     <p>Navigating life, and a Journey of Strength, Resilience, Nobility, and Dignity</p>
                     <h1>The Lion's Vision</h1>
-                    <Link to="/Resources"><button>Explore Resources</button></Link>
+                    <Link to="/"><button>Explore Resources</button></Link>
                 </section>
             </div>
 
@@ -30,7 +32,7 @@ export const HomePage = () => {
                         <div className="container2">
 
                             {/* Row 1 */}
-                            <input type="radio" name="slide" id="c1" checked onChange={() => {}} />
+                            <input type="radio" name="slide" id="c1" checked onChange={() => { }} />
                             <label htmlFor="c1" className="card">
                                 <div className="row">
                                     <div className="icon">1</div>
@@ -40,7 +42,7 @@ export const HomePage = () => {
                             </label>
 
                             {/* Row 2 */}
-                            <input type="radio" name="slide" id="c2" checked onChange={() => {}} />
+                            <input type="radio" name="slide" id="c2" checked onChange={() => { }} />
                             <label htmlFor="c2" className="card">
                                 <div className="row">
                                     <div className="icon">2</div>
@@ -50,7 +52,7 @@ export const HomePage = () => {
                             </label>
 
                             {/* Row 3 */}
-                            <input type="radio" name="slide" id="c3" checked onChange={() => {}} />
+                            <input type="radio" name="slide" id="c3" checked onChange={() => { }} />
                             <label htmlFor="c3" className="card">
                                 <div className="row">
                                     <div className="icon">3</div>
@@ -60,7 +62,7 @@ export const HomePage = () => {
                             </label>
 
                             {/* Row 4 */}
-                            <input type="radio" name="slide" id="c4" checked onChange={() => {}} />
+                            <input type="radio" name="slide" id="c4" checked onChange={() => { }} />
                             <label htmlFor="c4" className="card">
                                 <div className="row">
                                     <div className="icon">4</div>

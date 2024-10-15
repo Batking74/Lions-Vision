@@ -1,5 +1,6 @@
 // Importing Modules/Packages
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { registerServiceWorker } from './helpers/helpers.js';
 import { ResourcesPage } from './Pages/ResourcesPage.tsx';
 import { TimelinePage } from './Pages/TimelinePage.tsx';
 import { FeedbackPage } from './Pages/FeedbackPage.tsx';
@@ -53,6 +54,8 @@ const router = createBrowserRouter([{
     },
   ]
 }])
+
+registerServiceWorker();
 
 // Rendering all React Components to the root div in html.
 ReactDOM.createRoot(document.getElementById('root')!).render(
